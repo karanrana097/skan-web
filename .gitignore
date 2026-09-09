@@ -1,0 +1,15 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / Build artifacts (if any)
+node_modules/
+dist/
+build/
+.firebase/

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account &amp; Data Deletion Request - SKAN PG &amp; Homes</title>
+  <meta name="description" content="Request the deletion of your SKAN PG & Homes account and all associated personal data in accordance with Google Play developer policies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">S</div>
+        <div class="brand-title">
+          <span>SKAN</span>
+          <span>PG &amp; HOMES</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="terms.html" class="nav-link">Terms of Service</a></li>
+        <li><a href="delete-account.html" class="nav-link active">Account Deletion</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="index.html#download" class="btn btn-primary">Get App</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="policy-container">
+    <!-- Sidebar -->
+    <aside class="policy-sidebar">
+      <div class="sidebar-title">Deletion Guide</div>
+      <ul class="toc-list">
+        <li><a href="#overview" class="toc-link active">1. Overview</a></li>
+        <li><a href="#what-deleted" class="toc-link">2. What Data is Deleted</a></li>
+        <li><a href="#what-retained" class="toc-link">3. What Data is Retained</a></li>
+        <li><a href="#request-form" class="toc-link">4. Online Request Form</a></li>
+        <li><a href="#in-app-steps" class="toc-link">5. Delete from Inside App</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="policy-content">
+      <div class="doc-header">
+        <div class="doc-meta">
+          <span class="doc-badge" style="background-color: var(--color-danger-bg); color: var(--color-danger); border-color: #FECACA;">User Rights</span>
+          <span class="doc-date">Google Play Compliance</span>
+        </div>
+        <h1 class="doc-title">Request Account &amp; Data Deletion</h1>
+        <p class="doc-lead">
+          We value your privacy and give you full control over your personal data. You may request the permanent deletion of your <strong>SKAN PG &amp; Homes</strong> account (<code>com.skanpg.app</code>) and all associated personal records using the options below.
+        </p>
+      </div>
+
+      <!-- Section 1 -->
+      <section id="overview" class="policy-section">
+        <h2>1. Overview</h2>
+        <p>
+          In accordance with Google Play's User Data policy and global data protection standards, users are entitled to request the deletion of their account and any personal data stored on our servers without having to reinstall or keep the mobile application.
+        </p>
+        <p>
+          Once your deletion request is verified and processed, you will no longer be able to log in, access active digital tenant passes, or view past bookings.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="what-deleted" class="policy-section">
+        <h2>2. What Data is Deleted</h2>
+        <p>When your account deletion is completed, the following data is permanently purged from our active databases:</p>
+        <ul>
+          <li><strong>Personal Profile:</strong> Full name, email address, mobile phone number, gender, and profile photo.</li>
+          <li><strong>Tenant KYC Records:</strong> Uploaded government ID proofs, company/college details, and emergency contact details.</li>
+          <li><strong>Active Stay &amp; Pass Information:</strong> Digital room keys, QR gate passes, check-in history, and biometric face check-in punch logs.</li>
+          <li><strong>Device Tokens:</strong> Firebase Cloud Messaging push notification tokens and device hardware identifiers.</li>
+          <li><strong>Saved Preferences:</strong> Favorited PGs, saved searches, and communication history with property owners.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="what-retained" class="policy-section">
+        <h2>3. What Data May Be Retained &amp; Why</h2>
+        <p>
+          Certain limited categories of data cannot be deleted immediately due to applicable statutory obligations under Indian law:
+        </p>
+        <ul>
+          <li><strong>Financial Invoices &amp; Tax Records:</strong> Under statutory accounting and tax regulations (e.g., GST Act), records of financial rent transactions and GST invoices must be retained for the legally mandated period (up to 7 years). These records are detached from active accounts and archived in secure, encrypted compliance vaults.</li>
+          <li><strong>Active Disputed Stays:</strong> If an active stay has outstanding unpaid rent or an open dispute with a property host, the account deletion will be completed after dispute settlement.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="request-form" class="policy-section">
+        <h2>4. Online Account Deletion Request Form</h2>
+        <p>
+          Submit your request below. Our data protection team will verify your ownership and initiate the permanent purge within <strong>30 days</strong>.
+        </p>
+
+        <div class="deletion-card">
+          <form id="deletionForm">
+            <div class="form-group">
+              <label class="form-label" for="phoneInput">Registered Mobile Phone Number *</label>
+              <input type="tel" id="phoneInput" class="form-input" placeholder="+91 98765 43210" required>
+              <small style="color: var(--color-slate); font-size: 0.8rem;">Enter the phone number used to log in via OTP in the app.</small>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="emailInput">Registered Email Address (Optional)</label>
+              <input type="email" id="emailInput" class="form-input" placeholder="you@example.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="reasonSelect">Reason for Deletion</label>
+              <select id="reasonSelect" class="form-select">
+                <option value="moved-out">Moved out of PG / Found alternative accommodation</option>
+                <option value="privacy">Privacy concerns</option>
+                <option value="not-using">No longer using the application</option>
+                <option value="other">Other reason</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="commentsInput">Additional Comments / Notes (Optional)</label>
+              <textarea id="commentsInput" class="form-textarea" rows="3" placeholder="Any specific instructions regarding your data..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-checkbox-label">
+                <input type="checkbox" id="confirmCheck" required>
+                <span>
+                  I understand that deleting my account is permanent and cannot be undone. All my active digital tenant passes, check-in history, and stored preferences will be wiped out.
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-danger" style="width: 100%; padding: 0.85rem; font-size: 1rem;">
+              Submit Account &amp; Data Deletion Request
+            </button>
+          </form>
+
+          <!-- Success Alert State -->
+          <div id="deletionSuccess" style="display: none; padding: 1.5rem; background-color: var(--accent-emerald-bg); border: 1px solid var(--accent-emerald-border); border-radius: var(--radius-md); text-align: center;">
+            <div style="font-size: 2rem; color: var(--accent-emerald-dark); margin-bottom: 0.5rem;">✓</div>
+            <h3 style="color: var(--accent-emerald-dark); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Deletion Request Received</h3>
+            <p style="color: var(--color-slate-dark); font-size: 0.92rem; line-height: 1.6;">
+              Your deletion request has been submitted. A verification SMS will be sent to your registered phone number. Once confirmed, your account and personal data will be completely deleted within 30 days.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="in-app-steps" class="policy-section">
+        <h2>5. How to Delete from Within the Mobile App</h2>
+        <p>
+          If you have the SKAN PG &amp; Homes app installed, you can also delete your account instantly:
+        </p>
+        <ol>
+          <li>Open the <strong>SKAN PG &amp; Homes</strong> app on your Android device.</li>
+          <li>Tap the <strong>Profile</strong> tab in the bottom navigation bar.</li>
+          <li>Scroll down and tap <strong>Settings &amp; Security</strong>.</li>
+          <li>Select <strong>Delete Account &amp; Data</strong>.</li>
+          <li>Confirm with OTP verification to immediately purge your account.</li>
+        </ol>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>SKAN PG &amp; Homes</h4>
+        <p>
+          Zero-brokerage direct coliving network. Dedicated to tenant trust, security, and transparent data privacy.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Policy Links</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="delete-account.html">Account Deletion</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Direct Support</h5>
+        <ul>
+          <li><a href="mailto:privacy@skanpg.app">privacy@skanpg.app</a></li>
+          <li><a href="mailto:support@skanpg.app">support@skanpg.app</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>App Details</h5>
+        <ul>
+          <li>Package: <code>com.skanpg.app</code></li>
+          <li>Version: 1.0.0+1</li>
+          <li>Status: Production</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 SKAN PG &amp; Homes. All rights reserved.</p>
+      <p>Google Play Account Deletion URL Requirement</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

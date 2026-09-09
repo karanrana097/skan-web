@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Support - SKAN PG &amp; Homes</title>
+  <meta name="description" content="Contact customer support, submit grievances, or reach out to SKAN PG & Homes team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">S</div>
+        <div class="brand-title">
+          <span>SKAN</span>
+          <span>PG &amp; HOMES</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="terms.html" class="nav-link">Terms of Service</a></li>
+        <li><a href="delete-account.html" class="nav-link">Account Deletion</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="index.html#download" class="btn btn-primary">Get App</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="policy-container">
+    <aside class="policy-sidebar">
+      <div class="sidebar-title">Contact Channels</div>
+      <ul class="toc-list">
+        <li><a href="#support-channels" class="toc-link active">1. Support Channels</a></li>
+        <li><a href="#contact-form" class="toc-link">2. Send Message</a></li>
+        <li><a href="#grievance" class="toc-link">3. Grievance Officer</a></li>
+        <li><a href="#faq" class="toc-link">4. Common FAQs</a></li>
+      </ul>
+    </aside>
+
+    <main class="policy-content">
+      <div class="doc-header">
+        <div class="doc-meta">
+          <span class="doc-badge">Customer Helpdesk</span>
+          <span class="doc-date">24/7 Response Desk</span>
+        </div>
+        <h1 class="doc-title">Contact &amp; Support</h1>
+        <p class="doc-lead">
+          Need assistance with finding a PG, booking your stay, or accessing your digital tenant pass? Our team is here to help.
+        </p>
+      </div>
+
+      <section id="support-channels" class="policy-section">
+        <h2>1. Official Support Channels</h2>
+        <div class="features-grid" style="margin-top: 1.5rem;">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feature-icon-emerald">✉</div>
+            <h3>Email Support</h3>
+            <p>For general inquiries, booking support, or feedback:</p>
+            <p><strong><a href="mailto:support@skanpg.app" style="color: var(--accent-emerald-dark);">support@skanpg.app</a></strong></p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feature-icon-saffron">💬</div>
+            <h3>WhatsApp Care</h3>
+            <p>Direct chat with our resident onboarding coordinators:</p>
+            <p><strong><a href="https://wa.me/919876543210" target="_blank" rel="noopener" style="color: var(--accent-saffron-dark);">+91 98765 43210</a></strong></p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper feature-icon-navy">🏢</div>
+            <h3>Headquarters</h3>
+            <p>SKAN PG &amp; Homes Tech Hub<br>Outer Ring Road, Marathahalli / Bellandur<br>Bengaluru, Karnataka 560103, India</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-form" class="policy-section">
+        <h2>2. Send Us a Message</h2>
+        <div class="deletion-card">
+          <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to our support desk.'); this.reset();">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Your Name *</label>
+              <input type="text" id="contactName" class="form-input" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Subject</label>
+              <select id="contactSubject" class="form-select">
+                <option>Booking &amp; Move-In Assistance</option>
+                <option>Digital Tenant Pass / QR Issue</option>
+                <option>Host Listing Partnership</option>
+                <option>Refund / Security Deposit Query</option>
+                <option>General Feedback</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMsg">Message *</label>
+              <textarea id="contactMsg" class="form-textarea" rows="4" placeholder="How can we help you today?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="padding: 0.75rem 2rem;">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="grievance" class="policy-section">
+        <h2>3. Grievance Officer &amp; Statutory Compliance</h2>
+        <p>
+          As mandated by the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules and the Digital Personal Data Protection Act, user grievances can be submitted to our statutory officer:
+        </p>
+        <div class="highlight-box">
+          <p><strong>Designated Grievance Officer:</strong> Nodal Legal Officer</p>
+          <p><strong>Entity:</strong> SKAN PG &amp; Homes Private Limited</p>
+          <p><strong>Email:</strong> <a href="mailto:grievance@skanpg.app" style="color: var(--color-midnight); font-weight: 700;">grievance@skanpg.app</a></p>
+          <p><strong>Address:</strong> SKAN PG &amp; Homes, Outer Ring Road, Bengaluru, Karnataka, 560103</p>
+          <p><strong>Response SLA:</strong> Acknowledgment within 24–48 hours, resolution within 15–30 days.</p>
+        </div>
+      </section>
+
+      <section id="faq" class="policy-section">
+        <h2>4. Frequently Asked Questions</h2>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+          <div class="highlight-box" style="margin: 0;">
+            <p><strong>Q: Is there really zero brokerage?</strong></p>
+            <p>Yes! We charge ₹0 commission to tenants. You connect directly with verified property hosts without middlemen.</p>
+          </div>
+          <div class="highlight-box" style="margin: 0;">
+            <p><strong>Q: How does the Digital Tenant Pass work?</strong></p>
+            <p>Once your booking is confirmed, your in-app Digital Pass generates a live dynamic QR code for seamless building entry, curfew check-ins, and direct access to room amenities.</p>
+          </div>
+          <div class="highlight-box" style="margin: 0;">
+            <p><strong>Q: Is my booking advance safe?</strong></p>
+            <p>All token advances are protected in escrow until your scheduled move-in day. You can cancel up to 48 hours beforehand for a 100% full refund.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>SKAN PG &amp; Homes</h4>
+        <p>Zero-brokerage living made seamless and modern across India's top tech hubs.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Policy Links</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="delete-account.html">Account Deletion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Support</a></li>
+          <li><a href="mailto:support@skanpg.app">Email Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>App ID</h5>
+        <ul>
+          <li><code>com.skanpg.app</code></li>
+          <li>Google Play Certified</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SKAN PG &amp; Homes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
